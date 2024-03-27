@@ -15,7 +15,7 @@ it will be marked red, and then the "Next" button will appear to continue with t
 a title ("Play Quiz"), the completed progress bar (painted green), a text which will show the score (for example, "You scored 5 out of 10!"), and the "Play" button again
 to restart the game.
 
-# challenges faced
+# Challenges faced
 
 Creating the fake authentication container was easy, but making the function so that it disappears when you press the "Play Now" button and the questions container appears
 was difficult and took me a while to solve.
