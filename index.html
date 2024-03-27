@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Changa+One:ital@0;1&family=Protest+Riot&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="login">
+        <form>
+            <div class="container-loader">
+                <div class="loader"></div>
+                <h1 id="ready">Are you ready?</h1>
+                <div class="loader"></div>
+            </div>
+            <label for="fname">Enter your name:</label><br>
+            <input type="text" id="name" name="fname" placeholder="First name"><br>
+            <label for="mail">Enter your email</label><br>
+            <input type="text" id="name" name="email" placeholder="Email"><br><br>
+            <input type="submit" id="playNow" value="Play Now">
+        </form>
+    </div>
+
+    <div id="container">
+        <h1>Play Quiz</h1>
+        <p id="progressText" class="hud-prefix">Question</p>
+        <div id="progressBar">
+            <div id="progressBarFull"></div>
+        </div>
+        <div class="quiz">
+            <h2 id="question">Question</h2>
+            <div id="answer-buttons">
+                <button class="Btn">Answer 1</button>
+                <button class="Btn">Answer 2</button>
+                <button class="Btn">Answer 3</button>
+                <button class="Btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

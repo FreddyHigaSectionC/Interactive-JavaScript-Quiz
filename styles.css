@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #673F69;
+}
+
+#login {
+    background-color: #FBF3D5;
+    font-size: 16px;
+    width: 90%;
+    text-align: center;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#ready {
+    margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#name {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+#playNow {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#playNow:hover {
+    background-color: #D74B76;
+}
+
+#container {
+    background-color: #FBF3D5;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#container h1 {
+    text-align: center;
+    font-family: "Changa One", sans-serif;
+    font-size: 60px;
+    color: #D74B76;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.quiz {
+    padding: 10px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.Btn {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Btn:hover:not([disabled]) {
+    background-color: dimgray;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#next-btn:hover {
+    background-color: rgb(69, 69, 69)
+}
+
+.correct {
+    background-color: darkgreen;
+    color: white;
+}
+
+.incorrect {
+    background-color: orangered;
+    color: white;
+}
+
+.result {
+    text-align: center;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#progressBar {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 2rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 1rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
+
+.container-loader {
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    width: 80px;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffb940;
+    box-shadow: 0 0 0 50px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.loader:after {
+    animation: l5 1s infinite;
+    transform: perspective(300px) translateZ(0px)
+}
+
+@keyframes l5 {
+    to {
+        transform: perspective(300px) translateZ(150px);
+        opacity: 0
+    }
+}
